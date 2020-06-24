@@ -5,11 +5,12 @@ using System.Web;
 
 namespace CTWMasterClass_WebAppActivities.Sort
 {
-    public class Sort: IComparer<Barrel>
+    public class SortContentsAZ: IComparer<Barrel>
     {
         public int Compare(Barrel x, Barrel y)
         {
-            return 0;
+            var contentsResult = x.contents.CompareTo(y.contents);
+            return contentsResult;
         }
     }
 }

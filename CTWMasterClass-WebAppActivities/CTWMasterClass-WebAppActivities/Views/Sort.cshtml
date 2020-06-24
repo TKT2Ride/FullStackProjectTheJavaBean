@@ -1,11 +1,67 @@
-﻿<html>
-<label for="SortingOptions">Select:</label>
+﻿@model IEnumerable<DatabaseActivities.Models.Entity.Student>
 
-<select name="cars" id="cars">
-    <option value="volvo">Materials(a-z)</option>
-    <option value="saab">Location(a-z)</option>
-    <option value="mercedes">Contents(a-z)</option>
-    <option value="audi">Weight(low to high)</option>
-    <option value="audi">Weight(high to low)</option>
-</select>
-</html>
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <title>Sort</title>
+    <link href="~/StyleTile/stylesheet.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+    <div container="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-10">
+                <h1 class="majorHeading">Java Bean</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="minorHeading">Home</h3>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="minorHeading">Create</h3>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="minorHeading">Sort</h3>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="minorHeading">About Us</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <label for="SortingOptions">Select:</label>
+                <select name="cars" id="cars">
+                    <option value="materialsAZ">Materials(a-z)</option>
+                    <option value="locationAZ">Location(a-z)</option>
+                    <option value="contentsAZ">Contents(a-z)</option>
+                    <option value="weightLH">Weight(low to high)</option>
+                    <option value="">Weight(high to low)</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+

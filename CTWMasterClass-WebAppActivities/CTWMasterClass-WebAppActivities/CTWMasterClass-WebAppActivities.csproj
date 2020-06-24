@@ -173,9 +173,9 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sort\Barrel.cs" />
-    <Compile Include="Sort\Main.cs" />
-    <Compile Include="Sort\Sort.cs" />
+    <Compile Include="Sort\SortContentsAZ.cs" />
+    <Compile Include="Sort\SortWeightHL.cs" />
+    <Compile Include="Sort\SortWeightLH.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
