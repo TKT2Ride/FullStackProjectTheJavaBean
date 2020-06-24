@@ -1,0 +1,65 @@
+﻿body {
+    background-color: #C1CEFE;
+}
+/* Major Heading */
+
+.majorHeading {
+    font-family: Times New Roman;
+    font-weight: bold;
+    color: black;
+    font-size: xx-large;
+}
+
+/* Minor Heading */
+
+.minorHeading {
+    font-family: Times New Roman;
+    font-weight: bold;
+    color: #301934;
+    font-size: x-large;
+}
+
+/* General Text */
+
+.generalTextWhite {
+    font-family: Times New Roman;
+    color: white;
+    font-size: medium;
+}
+
+.generalTextBlack {
+    Font-family: Times New Roman;
+    Color: black;
+    Font-size: medium;
+}
+
+
+/* Button Formatting */
+
+.buttonFormatting {
+    background-color: #624CAB;
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    font-family: Times New Roman;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+    .buttonFormatting:hover {
+        background-color: white;
+        color: #624CAB;
+    }
+
+.panel {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    background-color: white;
+    margin: 0;
+}
