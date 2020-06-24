@@ -1,0 +1,5 @@
+﻿Right click the Project File (the green one up top named CTWMasterClass-WebAppActivities)
+Create a new Folder named "App_Data"
+Add a new Item under the App_Data Folder -> Data -> Sql Server Database
+Name it "appdb"
+
