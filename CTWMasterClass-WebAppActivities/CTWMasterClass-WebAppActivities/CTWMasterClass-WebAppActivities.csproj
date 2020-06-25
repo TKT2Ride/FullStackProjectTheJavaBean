@@ -240,6 +240,7 @@
     <Content Include="Views\Barrel\Sort.cshtml" />
     <Content Include="Views\Barrel\AboutUs.cshtml" />
     <Content Include="Views\Barrel\Delete.cshtml" />
+    <Content Include="Views\Barrel\WeightLH.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

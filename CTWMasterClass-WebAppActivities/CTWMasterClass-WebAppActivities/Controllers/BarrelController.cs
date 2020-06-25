@@ -14,6 +14,22 @@ namespace CTWMasterClass_WebAppActivities.Controllers
     {
         private BarrelService service = new BarrelService();
         // GET: Barrel
+
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Barrel barrel = service.GetBarrelById((int)id);
+            if (barrel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(barrel);
+        }
+
+
         public ActionResult Index()
         {
             return View(service.GetAllBarrels());
