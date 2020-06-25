@@ -50,6 +50,32 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
             return View(barrel);
         }
+
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Barrel barrel = service.GetBarrelById((int)id);
+            if (barrel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(barrel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Barrel barrel)
+        {
+            if (ModelState.IsValid)
+            {
+                service.EditBarrel(barrel);
+                return RedirectToAction("Index");
+            }
+            return View(barrel);
+        }
     }
 }
 

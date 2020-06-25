@@ -31,6 +31,10 @@ namespace CTWMasterClass_WebAppActivities.Service
             return repository.GetBarrelById(id);
         }
 
+        public void EditBarrel(Barrel toSave)
+        {
+            repository.EditBarrel(toSave);
+        }
     }
 }
 
