@@ -175,6 +175,10 @@
     <Compile Include="Migrations\202006251331558_Barrel.Designer.cs">
       <DependentUpon>202006251331558_Barrel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006251524227_BarrelModification.cs" />
+    <Compile Include="Migrations\202006251524227_BarrelModification.Designer.cs">
+      <DependentUpon>202006251524227_BarrelModification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Barrel.cs" />
@@ -184,6 +188,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about us\aboutuspage.html" />
     <Content Include="App_Data\appdb.mdf" />
     <Content Include="App_Data\appdb_log.ldf">
       <DependentUpon>appdb.mdf</DependentUpon>
@@ -196,7 +201,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Annotation 2020-06-24 141959.png" />
     <Content Include="INSTRUCTIONS\Instructions.txt" />
+    <Content Include="Preston%27s Pictures\Logo.JPG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -210,6 +217,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="StyleTile\stylesheet.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -227,6 +235,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Barrel\Index.cshtml" />
     <Content Include="Views\Barrel\Create.cshtml" />
+    <Content Include="Views\Barrel\Details.cshtml" />
+    <Content Include="Views\Barrel\Edit.cshtml" />
+    <Content Include="Views\Barrel\Sort.cshtml" />
+    <Content Include="Views\Barrel\AboutUs.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -245,6 +257,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006251331558_Barrel.resx">
       <DependentUpon>202006251331558_Barrel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006251524227_BarrelModification.resx">
+      <DependentUpon>202006251524227_BarrelModification.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
