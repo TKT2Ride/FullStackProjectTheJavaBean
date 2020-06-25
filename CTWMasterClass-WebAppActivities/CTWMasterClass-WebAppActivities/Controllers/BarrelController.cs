@@ -33,6 +33,10 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
             return View(barrel);
         }
+        public ActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }
 
