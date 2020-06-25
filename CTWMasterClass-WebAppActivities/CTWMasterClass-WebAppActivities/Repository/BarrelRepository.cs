@@ -23,6 +23,11 @@ namespace CTWMasterClass_WebAppActivities.Repositories
             dbContext.Barrels.Add(toAdd);
             dbContext.SaveChanges();
         }
+        public Barrel GetBarrelById(int id)
+        {
+            return dbContext.Barrels.Find(id);
+
+        }
     }
 }
 
