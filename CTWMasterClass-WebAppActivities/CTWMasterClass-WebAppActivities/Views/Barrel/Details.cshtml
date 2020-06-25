@@ -10,19 +10,87 @@
         <link href="~/StyleTile/stylesheet.css" rel="stylesheet" />
     </head>
 
-<h1 align="center" class="majorHeading">Barrel INC</h1>
+<h2 class="majorHeading">Details</h2>
 
-<h1 align="center" class="minorHeading">Details</h1>
+<div>
+    <div class=" panelFluid">
+        <h4 class="minorHeading"> ID = @Html.DisplayFor(model => model.Id)</h4>
+    </div>
+    
+    <hr />
+    <div class="panelFluid">
+        <div class="generalTextBlack">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.ConstructionMaterial)
+                </dt>
 
-<h1 align="center" class="generalTextBlack"> </h1>
-<h1 align="center" class="generalTextBlack">Content: </h1>
-<h1 align="center" class="generalTextBlack">Location: </h1>
-<h1 align="center" class="generalTextBlack">Date Created: </h1>
-<h1 align="center" class="generalTextBlack">Radius: </h1>
-<h1 align="center" class="generalTextBlack">Height: </h1>
-<h1 align="center" class="generalTextBlack">Weight: </h1>
+                <dd>
+                    @Html.DisplayFor(model => model.ConstructionMaterial)
+                </dd>
 
-<p align="left">
-    @Html.ActionLink("Back to Home", "Index")
+                <dt>
+                    @Html.DisplayNameFor(model => model.Contents)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Contents)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CurrentLocation)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CurrentLocation)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.DateCreated)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DateCreated)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Radius)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Radius)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Height)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Height)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Weight)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Weight)
+                </dd>
+
+
+
+
+
+            </dl>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+
+<p>
+    
+    @Html.ActionLink("Back Home", "Index")
 </p>
-
