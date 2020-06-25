@@ -33,6 +33,13 @@ namespace CTWMasterClass_WebAppActivities.Repositories
             dbContext.Entry(toSave).State = System.Data.Entity.EntityState.Modified;
             dbContext.SaveChanges();
         }
+
+        public void DeleteBarrel(Barrel toDelete)
+        {
+            dbContext.Barrels.Remove(toDelete);
+            dbContext.SaveChanges();
+        }
+
     }
 }
 

@@ -102,6 +102,13 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View();
         }
+
+        public ActionResult Delete(Barrel barrel)
+        {
+            service.DeleteBarrel(barrel);
+            return View(barrel);
+        }
+
     }
 }
 
