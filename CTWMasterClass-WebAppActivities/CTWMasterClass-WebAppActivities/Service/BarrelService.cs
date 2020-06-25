@@ -30,11 +30,6 @@ namespace CTWMasterClass_WebAppActivities.Service
             List<Barrel> list = repository.GetAllBarrels();
             return list.OrderBy(o => o.Weight).ToList();
         }
-        public List<Barrel> ContentsAZ()
-        {
-            List<Barrel> list = repository.GetAllBarrels();
-            return list.OrderBy(o => o.Contents).ToList();
-        }
         public List<Barrel> SortWeightHL()
         {
             List<Barrel> list = repository.GetAllBarrels();
@@ -50,6 +45,12 @@ namespace CTWMasterClass_WebAppActivities.Service
         {
             repository.EditBarrel(toSave);
         }
+
+        public void DeleteBarrel(Barrel toDelete)
+        {
+            repository.DeleteBarrel(toDelete);
+        }
+
     }
 }
 
