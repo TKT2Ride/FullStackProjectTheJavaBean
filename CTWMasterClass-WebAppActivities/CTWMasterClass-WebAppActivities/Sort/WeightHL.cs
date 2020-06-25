@@ -6,17 +6,17 @@ using System.Web;
 
 namespace CTWMasterClass_WebAppActivities.Sort
 {
-    public class WeightLH : IComparer<Barrel>
+    public class WeightHL : IComparer<Barrel>
     {
         public int Compare(Barrel x, Barrel y)
         {
             if (x.Weight > y.Weight)
             {
-                return 1;
-            }
-            else if(x.Weight < y.Weight)
-            {
                 return -1;
+            }
+            else if (x.Weight < y.Weight)
+            {
+                return 1;
             }
             return 0;
         }

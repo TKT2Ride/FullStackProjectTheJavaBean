@@ -20,8 +20,22 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View();
         }
-        public ActionResult Sort()
+
+           
+        }
+        public ActionResult SortList(String command)
         {
+            
+            switch (command)
+            {
+                case "weightLH":
+                    return View(service.SortWeightLH());
+                    break;
+                case "weightHL":
+                    return View(service.SortWeightHL());
+                    break;
+            }
+            
             return View(service.GetAllBarrels());
         }
 
