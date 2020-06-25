@@ -15,43 +15,46 @@
 <h1 align="center" class="minorHeading">Home</h1>
 
 
-<div class="generalTextBlack">
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ConstructionMaterial)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contents)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CurrentLocation)
-            </th>
-            <th></th>
-        </tr>
-
-
-        @foreach (var item in Model)
-        {
+<div class="panelFluid">
+    <div class="generalTextBlack">
+        <table class="table">
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ConstructionMaterial)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Contents)
-                </td>
                 <th>
-                    @Html.DisplayFor(modelItem => item.CurrentLocation)
+                    @Html.DisplayNameFor(model => model.ConstructionMaterial)
                 </th>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Contents)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CurrentLocation)
+                </th>
+                <th></th>
             </tr>
-        }
 
-    </table>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ConstructionMaterial)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contents)
+                    </td>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.CurrentLocation)
+                    </th>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+   
 </div>
 
 
