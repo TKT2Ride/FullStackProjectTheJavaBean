@@ -38,7 +38,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
                     break;
             }
 
-        
+        }
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -54,7 +54,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         }
 
             
-        }
+        
         public ActionResult Sort(String command)
         {
             return View(service.SortWeightHL());
