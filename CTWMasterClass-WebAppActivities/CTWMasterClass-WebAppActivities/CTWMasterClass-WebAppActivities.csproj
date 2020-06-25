@@ -185,6 +185,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BarrelRepository.cs" />
     <Compile Include="Service\BarrelService.cs" />
+    <Compile Include="Sort\ContentsAZ.cs" />
+    <Compile Include="Sort\WeightHL.cs" />
+    <Compile Include="Sort\WeightLH.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
