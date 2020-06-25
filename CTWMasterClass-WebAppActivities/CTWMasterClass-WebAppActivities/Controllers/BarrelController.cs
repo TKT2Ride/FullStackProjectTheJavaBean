@@ -3,8 +3,10 @@ using CTWMasterClass_WebAppActivities.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Data;
 
 namespace CTWMasterClass_WebAppActivities.Controllers
 {
@@ -19,6 +21,21 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         public ActionResult Create()
         {
             return View();
+        }
+
+        
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Barrel barrel = service.GetBarrelById((int)id);
+            if (barrel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(barrel);
         }
 
         [HttpPost]
