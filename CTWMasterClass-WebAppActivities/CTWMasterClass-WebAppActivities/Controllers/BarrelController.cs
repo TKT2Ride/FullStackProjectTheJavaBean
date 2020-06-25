@@ -20,6 +20,28 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View();
         }
+        public ActionResult SortList(String command)
+        {
+            RedirectToAction("SorList", "BarrelController");
+            switch (command)
+            {
+                case "weightLH":
+                    return View(service.SortWeightLH());
+                    break;
+                case "weightHL":
+                    return View(service.SortWeightHL());
+                    break;
+                default:
+                    return View(service.GetAllBarrels());
+                    break;
+            }
+
+            
+        }
+        public ActionResult Sort(String command)
+        {
+            return View(service.SortWeightHL());
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
