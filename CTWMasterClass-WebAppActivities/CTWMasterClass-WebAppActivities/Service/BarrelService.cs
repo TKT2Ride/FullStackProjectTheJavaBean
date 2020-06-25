@@ -50,6 +50,11 @@ namespace CTWMasterClass_WebAppActivities.Service
         {
             repository.EditBarrel(toSave);
         }
+
+        public void DeleteBarrel(Barrel toDelete)
+        {
+            repository.DeleteBarrel(toDelete);
+        }
     }
 }
 

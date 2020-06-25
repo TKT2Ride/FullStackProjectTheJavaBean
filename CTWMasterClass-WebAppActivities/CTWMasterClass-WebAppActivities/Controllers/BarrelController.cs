@@ -24,7 +24,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         }
         public ActionResult SortList(String command)
         {
-            RedirectToAction("SorList", "BarrelController");
+            RedirectToAction("SortList", "BarrelController");
             switch (command)
             {
                 case "weightLH":
@@ -101,6 +101,12 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         public ActionResult AboutUs()
         {
             return View();
+        }
+
+        public ActionResult Delete(Barrel barrel)
+        {
+            service.DeleteBarrel(barrel);
+            return View(barrel);
         }
     }
 }
