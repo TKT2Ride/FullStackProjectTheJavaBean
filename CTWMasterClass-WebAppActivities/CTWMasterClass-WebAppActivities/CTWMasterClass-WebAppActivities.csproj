@@ -203,6 +203,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\Annotation 2020-06-24 141959.png" />
     <Content Include="INSTRUCTIONS\Instructions.txt" />
+    <Content Include="Preston%27s Pictures\Logo.JPG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -235,6 +236,9 @@
     <Content Include="Views\Barrel\Index.cshtml" />
     <Content Include="Views\Barrel\Create.cshtml" />
     <Content Include="Views\Barrel\Details.cshtml" />
+    <Content Include="Views\Barrel\Edit.cshtml" />
+    <Content Include="Views\Barrel\Sort.cshtml" />
+    <Content Include="Views\Barrel\AboutUs.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

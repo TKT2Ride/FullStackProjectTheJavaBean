@@ -28,6 +28,11 @@ namespace CTWMasterClass_WebAppActivities.Repositories
             return dbContext.Barrels.Find(id);
 
         }
+        public void EditBarrel(Barrel toSave)
+        {
+            dbContext.Entry(toSave).State = System.Data.Entity.EntityState.Modified;
+            dbContext.SaveChanges();
+        }
     }
 }
 

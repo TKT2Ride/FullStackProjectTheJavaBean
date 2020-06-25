@@ -22,6 +22,21 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View();
         }
+        public ActionResult SortList(String command)
+        {
+            RedirectToAction("SorList", "BarrelController");
+            switch (command)
+            {
+                case "weightLH":
+                    return View(service.SortWeightLH());
+                    break;
+                case "weightHL":
+                    return View(service.SortWeightHL());
+                    break;
+                default:
+                    return View(service.GetAllBarrels());
+                    break;
+            }
 
         
         public ActionResult Details(int? id)
@@ -38,6 +53,13 @@ namespace CTWMasterClass_WebAppActivities.Controllers
             return View(barrel);
         }
 
+            
+        }
+        public ActionResult Sort(String command)
+        {
+            return View(service.SortWeightHL());
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Barrel barrel)
@@ -49,6 +71,36 @@ namespace CTWMasterClass_WebAppActivities.Controllers
             }
 
             return View(barrel);
+        }
+
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Barrel barrel = service.GetBarrelById((int)id);
+            if (barrel == null)
+            {
+                return HttpNotFound();
+            }
+            return View(barrel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Barrel barrel)
+        {
+            if (ModelState.IsValid)
+            {
+                service.EditBarrel(barrel);
+                return RedirectToAction("Index");
+            }
+            return View(barrel);
+        }
+        public ActionResult AboutUs()
+        {
+            return View();
         }
     }
 }
