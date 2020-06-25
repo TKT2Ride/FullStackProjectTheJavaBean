@@ -197,6 +197,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="INSTRUCTIONS\Instructions.txt" />
+    <Content Include="Preston%27s Pictures\Logo.JPG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -210,6 +211,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="StyleTile\stylesheet.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -227,6 +229,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Barrel\Index.cshtml" />
     <Content Include="Views\Barrel\Create.cshtml" />
+    <Content Include="Views\Barrel\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
