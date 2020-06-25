@@ -175,6 +175,10 @@
     <Compile Include="Migrations\202006251331558_Barrel.Designer.cs">
       <DependentUpon>202006251331558_Barrel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006251524227_BarrelModification.cs" />
+    <Compile Include="Migrations\202006251524227_BarrelModification.Designer.cs">
+      <DependentUpon>202006251524227_BarrelModification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Barrel.cs" />
@@ -184,6 +188,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about us\aboutuspage.html" />
     <Content Include="App_Data\appdb.mdf" />
     <Content Include="App_Data\appdb_log.ldf">
       <DependentUpon>appdb.mdf</DependentUpon>
@@ -246,6 +251,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006251331558_Barrel.resx">
       <DependentUpon>202006251331558_Barrel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006251524227_BarrelModification.resx">
+      <DependentUpon>202006251524227_BarrelModification.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
