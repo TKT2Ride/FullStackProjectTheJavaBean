@@ -36,6 +36,7 @@ namespace CTWMasterClass_WebAppActivities.Repositories
 
         public void DeleteBarrel(Barrel toDelete)
         {
+           
             dbContext.Barrels.Remove(toDelete);
             dbContext.SaveChanges();
         }
