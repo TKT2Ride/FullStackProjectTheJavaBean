@@ -20,6 +20,10 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View();
         }
+        public ActionResult Sort()
+        {
+            return View(service.GetAllBarrels());
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
