@@ -13,11 +13,14 @@
 </head>
 <body>
     <div container="container-fluid">
-   
+
         <div class="row">
             <div class="col-sm-4">
-                <h3 class="minorHeading">Weight(High to Low)</h3>
-                @Html.ActionLink("Weight(L-H)", "WeightLH")
+
+                <h3 class="minorHeading">Weight(Low to High)</h3>
+                @Html.ActionLink("Weight(H-L)", "Sort")
+                <form action="Sort" method="post">
+                </form>
             </div>
         </div>
         <div class="row">
@@ -65,7 +68,7 @@
                 </table>
 
             </div>
-            
+
         </div>
     </div>
 
