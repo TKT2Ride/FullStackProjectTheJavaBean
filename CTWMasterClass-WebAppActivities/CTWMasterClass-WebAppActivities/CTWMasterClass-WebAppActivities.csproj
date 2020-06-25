@@ -237,6 +237,8 @@
     <Content Include="Views\Barrel\Create.cshtml" />
     <Content Include="Views\Barrel\Details.cshtml" />
     <Content Include="Views\Barrel\Edit.cshtml" />
+    <Content Include="Views\Barrel\Sort.cshtml" />
+    <Content Include="Views\Barrel\AboutUs.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

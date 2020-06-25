@@ -25,6 +25,21 @@ namespace CTWMasterClass_WebAppActivities.Service
         {
             repository.AddBarrel(toAdd);
         }
+        public List<Barrel> SortWeightLH()
+        {
+            List<Barrel> list = repository.GetAllBarrels();
+            return list.OrderBy(o => o.Weight).ToList();
+        }
+        public List<Barrel> ContentsAZ()
+        {
+            List<Barrel> list = repository.GetAllBarrels();
+            return list.OrderBy(o => o.Contents).ToList();
+        }
+        public List<Barrel> SortWeightHL()
+        {
+            List<Barrel> list = repository.GetAllBarrels();
+            return list.OrderByDescending(o => o.Weight).ToList();
+        }
 
         public Barrel GetBarrelById(int id)
         {
