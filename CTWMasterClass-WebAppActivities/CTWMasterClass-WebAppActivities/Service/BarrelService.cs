@@ -1,6 +1,5 @@
 ﻿using CTWMasterClass_WebAppActivities.Models;
 using CTWMasterClass_WebAppActivities.Repositories;
-using CTWMasterClass_WebAppActivities.Sort;
 using System;
 using System.Collections.Generic;
 using System.Linq;
