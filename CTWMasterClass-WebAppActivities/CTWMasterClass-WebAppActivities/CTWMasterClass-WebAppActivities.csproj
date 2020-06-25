@@ -166,6 +166,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\BarrelController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -215,8 +216,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Create.cshtml" />
-    <Content Include="Views\Edit.cshtml" />
+    <Content Include="Views\Barrel\Create.cshtml" />
+    <Content Include="Views\Barrel\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
