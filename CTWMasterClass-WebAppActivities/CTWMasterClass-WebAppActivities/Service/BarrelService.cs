@@ -25,6 +25,11 @@ namespace CTWMasterClass_WebAppActivities.Service
             repository.AddBarrel(toAdd);
         }
 
+        public Barrel GetBarrelById(int id)
+        {
+            return repository.GetBarrelById(id);
+        }
+
     }
 }
 

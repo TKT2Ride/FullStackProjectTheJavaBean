@@ -1,0 +1,28 @@
+﻿@model IEnumerable<CTWMasterClass_WebAppActivities.Models.Barrel>
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <head>
+
+        <link href="~/StyleTile/stylesheet.css" rel="stylesheet" />
+    </head>
+
+<h1 align="center" class="majorHeading">Barrel INC</h1>
+
+<h1 align="center" class="minorHeading">Details</h1>
+
+<h1 align="center" class="generalTextBlack"> @Html.DisplayNameFor(model => model.ConstructionMaterial)</h1>
+<h1 align="center" class="generalTextBlack">Content: </h1>
+<h1 align="center" class="generalTextBlack">Location: </h1>
+<h1 align="center" class="generalTextBlack">Date Created: </h1>
+<h1 align="center" class="generalTextBlack">Radius: </h1>
+<h1 align="center" class="generalTextBlack">Height: </h1>
+<h1 align="center" class="generalTextBlack">Weight: </h1>
+
+<p align="left">
+    @Html.ActionLink("Back to Home", "Index")
+</p>
+

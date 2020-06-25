@@ -5,18 +5,74 @@
 }
 
 
-<h2>Index</h2>
+    <head>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+        <link href="~/StyleTile/stylesheet.css" rel="stylesheet" />
+    </head>
+
+<div class="row">
+    <div class="col-sm-2">
+
+        <img src="~/Images/Annotation 2020-06-24 141959.png" width="200"/>
+    </div>
+    <div class="col-sm-8">
+        <h1 align="center" class="majorHeading">Barrel INC</h1>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+</div>
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="col-sm-offset-8">
+            <a class="buttonFormatting" href="">Home</a>
+        </div>
+
+    </div>
+    <div class="col-sm-3">
+        <div class="col-sm-offset-5">
+            <a class="buttonFormatting" href="">Create</a>
+        </div>
+
+    </div>
+    <div class="col-sm-3">
+        <div class="col-sm-offset-2">
+            <a class="buttonFormatting" href="">Sort</a>
+        </div>
+
+    </div>
+    <div class="col-sm-1">
+        <div class="col-sm-offset-2">
+            <a class="buttonFormatting" href="">About</a>
+        </div>
+
+    </div>
+</div>
+
+<h1 align="center" class="minorHeading">Home</h1>
+
+
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Height)
+            @Html.DisplayNameFor(model => model.ConstructionMaterial)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Radius)
+            @Html.DisplayNameFor(model => model.Contents)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentLocation)
         </th>
         <th></th>
     </tr>
@@ -25,14 +81,17 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Height)
+                @Html.DisplayFor(modelItem => item.ConstructionMaterial)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Radius)
+                @Html.DisplayFor(modelItem => item.Contents)
             </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.CurrentLocation)
+            </th>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                @Html.ActionLink("Details", "Details", new { id = item.Id })
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
