@@ -20,12 +20,9 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View();
         }
-
-           
-        }
         public ActionResult SortList(String command)
         {
-            
+            RedirectToAction("SorList", "BarrelController");
             switch (command)
             {
                 case "weightLH":
@@ -34,9 +31,16 @@ namespace CTWMasterClass_WebAppActivities.Controllers
                 case "weightHL":
                     return View(service.SortWeightHL());
                     break;
+                default:
+                    return View(service.GetAllBarrels());
+                    break;
             }
+
             
-            return View(service.GetAllBarrels());
+        }
+        public ActionResult Sort(String command)
+        {
+            return View(service.SortWeightHL());
         }
 
         [HttpPost]
