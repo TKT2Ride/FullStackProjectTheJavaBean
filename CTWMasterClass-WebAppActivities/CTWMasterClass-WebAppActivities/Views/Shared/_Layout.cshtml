@@ -11,27 +11,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+<body style=" background-color: #C1CEFE">
+    <div class="container=fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="../images/thejavabeannew1.png" style="width:240px" />
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-         
+            <div class="col-sm-8" align="center">
+                <h1 class="majorHeading"> Barrels Inc. </h1>
             </div>
         </div>
     </div>
+
+    <br />
+
+    <div class="container-fluid">
+        <div class="row" align="center">
+            <div class="col-sm-3">
+                <div class="buttonFormatting" class="buttonFormatting:hover"> Home </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="buttonFormatting" class="buttonFormatting:hover"> Create </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="buttonFormatting" class="buttonFormatting:hover">Sort/Edit </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="buttonFormatting" class="buttonFormatting:hover"> About Us</div>
+            </div>
+        </div>
+    </div>
+   
     <div class="container body-content">
         @RenderBody()
         <hr />
