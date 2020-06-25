@@ -1,4 +1,5 @@
-﻿using CTWMasterClass_WebAppActivities.Models;
+﻿
+using CTWMasterClass_WebAppActivities.Models;
 using CTWMasterClass_WebAppActivities.Repositories;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,15 @@ namespace CTWMasterClass_WebAppActivities.Service
             return list.OrderByDescending(o => o.Weight).ToList();
         }
 
+        public Barrel GetBarrelById(int id)
+        {
+            return repository.GetBarrelById(id);
+        }
+
+        public void EditBarrel(Barrel toSave)
+        {
+            repository.EditBarrel(toSave);
+        }
     }
 }
 
