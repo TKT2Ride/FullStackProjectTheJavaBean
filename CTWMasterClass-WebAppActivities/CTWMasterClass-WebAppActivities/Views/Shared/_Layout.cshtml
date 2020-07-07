@@ -2,33 +2,46 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <link href="~/StyleTile/stylesheet.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+<body style=" background-color: #C1CEFE">
+    <div class="container=fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="~/Images/Annotation 2020-06-24 141959.png" style="width:240px"/>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-         
+            <div class="col-sm-8" align="center">
+                <h1 class="majorHeading"> Barrels Inc. </h1>
             </div>
         </div>
     </div>
+
+    <br />
+
+    <div class="container-fluid">
+        <div class="row" align="center">
+            <div class="col-sm-3">
+                <p class="buttonFormatting" class="buttonFormatting:hover" class="a:link"> @Html.ActionLink("Home", "Index") </p>
+            </div>
+            <div class="col-sm-3">
+                <p class="buttonFormatting" class="buttonFormatting:hover" class="a:link"> @Html.ActionLink("Create", "Create") </p>
+            </div>
+            <div class="col-sm-3">
+                <p class="buttonFormatting" class="buttonFormatting:hover" class="a:link"> @Html.ActionLink("Sort", "Sort") </p>
+            </div>
+            <div class="col-sm-3">
+                <p class="buttonFormatting" class="buttonFormatting:hover" class="a:link"> @Html.ActionLink("About Us", "AboutUs") </p>
+            </div>
+        </div>
+    </div>
+   
     <div class="container body-content">
         @RenderBody()
         <hr />

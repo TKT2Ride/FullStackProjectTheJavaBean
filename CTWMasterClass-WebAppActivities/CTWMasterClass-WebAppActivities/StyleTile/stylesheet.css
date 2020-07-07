@@ -63,3 +63,16 @@
     background-color: white;
     margin: 0;
 }
+.panelFluid {
+    padding: 10px;
+    background-color: white;
+    margin: 0;
+}
+a:link {
+    color: darkgrey;
+}
+
+/* visited link */
+a:visited {
+    color: darkgrey;
+}
