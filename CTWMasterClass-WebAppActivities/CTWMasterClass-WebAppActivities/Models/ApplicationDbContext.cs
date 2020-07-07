@@ -25,5 +25,6 @@ namespace CTWMasterClass_WebAppActivities.Models
             modelBuilder.Configurations.AddFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
+        public DbSet<Cube> Cubes { get; set; }
     }
 }
