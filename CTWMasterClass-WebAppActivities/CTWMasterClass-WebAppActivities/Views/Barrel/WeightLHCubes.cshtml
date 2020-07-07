@@ -1,7 +1,8 @@
-﻿@model IEnumerable<CTWMasterClass_WebAppActivities.Models.Barrel>
+﻿
+@model IEnumerable<CTWMasterClass_WebAppActivities.Models.Cube>
 
 @{
-    ViewBag.Title = "Sort";
+    ViewBag.Title = "WeightLHCubes";
 }
 
 <head>
@@ -16,11 +17,14 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <h3 class="minorHeading">Weight(High to Low)-Barrels</h3>
+
+                <h3 class="minorHeading">Weight(Low to High)- Cubes</h3>
                 <br />
-                @Html.ActionLink("Weight(L-H)-Barrels", "WeightLH")|
-                @Html.ActionLink("Weight(L-H)-Cubes", "WeightLHCubes")|
+                @Html.ActionLink("Weight(H-L)-Barrels", "Sort")|
+                @Html.ActionLink("Weight(L-H)", "WeightLH")|
                 @Html.ActionLink("Weight(H-L)-Cubes", "SortCubes")
+                <form action="Sort" method="post">
+                </form>
             </div>
         </div>
         <div class="row">
@@ -73,6 +77,8 @@
     </div>
 
 </body>
+
+
 
 
 

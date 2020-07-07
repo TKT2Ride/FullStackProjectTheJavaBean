@@ -32,7 +32,8 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
         public ActionResult Index()
         {
-            return View(service.GetAllBarrels());
+            
+            return View();
         }
         public ActionResult Create()
         {

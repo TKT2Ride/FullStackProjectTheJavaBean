@@ -17,8 +17,10 @@
         <div class="row">
             <div class="col-sm-4">
 
-                <h3 class="minorHeading">Weight(Low to High)</h3>
-                @Html.ActionLink("Weight(H-L)", "Sort")
+                <h3 class="minorHeading">Weight(Low to High)-Barrels</h3>
+                @Html.ActionLink("Weight(H-L)-Barrels", "Sort")|
+                @Html.ActionLink("Weight(L-H)-Cubes", "WeightLHCubes")|
+                @Html.ActionLink("Weight(H-L)-Cubes", "SortCubes")
                 <form action="Sort" method="post">
                 </form>
             </div>

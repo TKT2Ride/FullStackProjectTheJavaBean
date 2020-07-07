@@ -39,12 +39,12 @@ namespace CTWMasterClass_WebAppActivities.Controllers
             return View();
         }
         
-        public ActionResult Sort()
+        public ActionResult SortCubes()
         {
             return View(service.SortWeightHL());
         }
         
-        public ActionResult WeightLH()
+        public ActionResult WeightLHCubes()
         {
             return View(service.SortWeightLH());
         }
