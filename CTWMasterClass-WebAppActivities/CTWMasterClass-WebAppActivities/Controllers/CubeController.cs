@@ -34,7 +34,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         {
             return View(service.GetAllCubes());
         }
-        public ActionResult Create()
+        public ActionResult CreateCube()
         {
             return View();
         }
@@ -55,7 +55,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Cube cube)
+        public ActionResult CreateCube(Cube cube)
         {
             if (ModelState.IsValid)
             {
@@ -66,7 +66,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
             return View(cube);
         }
 
-        public ActionResult Edit(int? id)
+        public ActionResult EditCube(int? id)
         {
             if (id == null)
             {
@@ -82,7 +82,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Cube cube)
+        public ActionResult EditCube(Cube cube)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +97,7 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         }
 
 
-        public ActionResult Delete(int? id)
+        public ActionResult DeleteCube(int? id)
         {
             if (id == null)
             {

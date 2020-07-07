@@ -249,7 +249,8 @@
     <Content Include="Views\Barrel\AboutUs.cshtml" />
     <Content Include="Views\Barrel\Delete.cshtml" />
     <Content Include="Views\Barrel\WeightLH.cshtml" />
-    <Content Include="Views\Cube\Edit.cshtml" />
+    <Content Include="Views\Cube\EditCube.cshtml" />
+    <Content Include="Views\Cube\CreateCube.cshtml" />
     <Content Include="Views\Cube\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
