@@ -249,10 +249,9 @@
     <Content Include="Views\Barrel\AboutUs.cshtml" />
     <Content Include="Views\Barrel\Delete.cshtml" />
     <Content Include="Views\Barrel\WeightLH.cshtml" />
+    <Content Include="Views\Cube\Edit.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Cube\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
