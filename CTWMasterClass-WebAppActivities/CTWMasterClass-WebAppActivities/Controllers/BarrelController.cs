@@ -13,6 +13,8 @@ namespace CTWMasterClass_WebAppActivities.Controllers
     public class BarrelController : Controller
     {
         private BarrelService service = new BarrelService();
+        private CubeService cubeService = new CubeService();
+        
         // GET: Barrel
 
         public ActionResult Details(int? id)
@@ -95,6 +97,15 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         public ActionResult AboutUs()
         {
             return View();
+        }
+        public ActionResult SortCubes()
+        {
+            return View(cubeService.SortWeightHL());
+        }
+
+        public ActionResult WeightLHCubes()
+        {
+            return View(cubeService.SortWeightLH());
         }
 
 
